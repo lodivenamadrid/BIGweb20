@@ -1,0 +1,160 @@
+/* BIG Website */
+
+html {
+    background-color: whitesmoke;
+}
+
+
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+ 
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    padding: .8em;
+    padding-bottom: 0; 
+ 
+}
+h2 {
+    padding: .3em;
+    padding-right: 0;
+}
+
+h4 {
+    text-align: center;
+    padding: .1em;
+    padding-right: 0; 
+}
+
+p {
+   font-size: 1em; 
+   margin: 2em;     
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+img {
+    width: 100%;
+    border:1px solid #000; /* width style color */   
+}
+
+div.gallery {
+    text-align: center;
+}
+
+div.accessibility {
+    text-align: justify;  
+}
+
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+
+aside {
+    font-size: .8em;
+}
+
+
+/* MOBILE STYLES */
+
+@media all and (max-width: 600px) {
+    
+    main {
+    width: 100%;
+    }
+    
+    section {
+    float: none;
+    width: 100%;
+    }
+
+    aside {
+    float: none;
+    width: 100%;
+    }   
+    
+}
+
+/* START Left Column styles */
+section {
+    float:left;
+    width: 63%;
+    background-color: #fff;
+}
+/* End Left Column styles */
+
+/* START Right Column styles */
+aside {
+    float: right;
+    width: 34%;
+    background-color: #fff;
+}
+/* END Right Column styles */
+
+.fullwidth {
+    width: 100%;
+}
+
+/* START - EMBED RESPONSIVELY STYLES */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* END - EMBED RESPONSIVELY STYLES */
+
+
+/*HIDE AGENDA VIEW CALENDAR */
+.embed-container.agenda-view {
+    display: none;
+}
+
+/* CALENDAR PHONE RULES */
+@media all and (max-width: 840px) {
+    
+/* Show Agenda View Calendar */
+div.embed-container.agenda-view {
+        display: block;
+    }
+        
+/* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display: none;  
+    }
+    }
+    
+footer {
+    padding: 2em;
+    text-align: center;
+    clear: both;
+    }
